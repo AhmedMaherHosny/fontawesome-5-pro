@@ -2,7 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://opengraphprotocol.org/schema/" lang="en-US" prefix="og: http://ogp.me/ns#" xml:lang="en-US" prefix="og: http://ogp.me/ns#">
 
 <head>
-	<title>Fontawesome 5 pro icons</title>
+	<title>Fontawesome 5.15.0 pro icons</title>
 	<meta charset="utf-8">
 	<meta name="description" content="Fontawesome 5 pro icons Example">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -193,8 +193,7 @@
 	<div style="width: 98%;display: block;margin:10px auto;" id="main">
 		<ul id="mainul">
 		</ul>
-	</div>
-
+    </div>
 	<script>
 		let listreg = [
 			'abacus',
@@ -229,7 +228,8 @@
 			'comment-alt-edit',
 			'bone-break',
 			'laptop-code',
-			'layer-group',
+            'layer-group',
+            'badger-honey'
 		];
 		let listbrand = [
 			'algolia',
@@ -254,8 +254,15 @@
 			'app-store',
 			'facebook-f',
 			'facebook-messenger',
+        ];
+        
+		let listsolid = [
+			'alien-monster',
 		];
 
+
+
+document.getElementById('mainul').innerHTML += "<h2 class='title'>Regular </h2>"
 
 listreg.forEach(e => {
 		document.getElementById('mainul').innerHTML += `<li class='list'><div class='listdiv'><a href='#' class='ilink'><i class='fal fa-${e}' style='font-size: 48px;'></i></a><div class='icondetel'><span>${e}</span></div></div></li>`
@@ -266,7 +273,15 @@ document.getElementById('mainul').innerHTML += "<h2 class='title'>Brands </h2>"
 listbrand.forEach(e => {
 		document.getElementById('mainul').innerHTML += `<li class='list'><div class='listdiv'><a href='#' class='ilink'><i class='fab fa-${e}' style='font-size: 48px;'></i></a><div class='icondetel'><span>${e}</span></div></div></li>`
 });
-		document.getElementById('mainul').innerHTML += "<h2 class='title'>Full Doc and Chose Any Icon<a href='https://fontawesome.com/icons?d=gallery'>FontAwesome</a> </h2>"
+
+document.getElementById('mainul').innerHTML += "<h2 class='title'>Soild </h2>"
+
+listsolid.forEach(e => {
+		document.getElementById('mainul').innerHTML += `<li class='list'><div class='listdiv'><a href='#' class='ilink'><i class='fas fa-${e}' style='font-size: 48px;'></i></a><div class='icondetel'><span>${e}</span></div></div></li>`
+});
+
+
+document.getElementById('mainul').innerHTML += "<h2 class='title'>Full Doc and Chose Any Icon <a href='https://fontawesome.com/icons?d=gallery'>FontAwesome</a> </h2>"
 </script>
 </body>
 
